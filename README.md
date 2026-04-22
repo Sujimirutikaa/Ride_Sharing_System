@@ -41,23 +41,7 @@ runapplication.bat
 ### 3. Database Seed Data
 An initial `seed_data.sql` file is provided. You can populate the database manually or use the setup script which initializes the schema via Alembic.
 
-## SDK Usage
-The SDK is located in the `ride_sdk` folder. Here is an example of how to use it:
 
-```python
-from ride_sdk.api_client import ApiClient
-from ride_sdk.api.rides_api import RidesApi
-from ride_sdk.configuration import Configuration
-
-# Define configuration
-config = Configuration(host="http://localhost:8000")
-client = ApiClient(config)
-api = RidesApi(client)
-
-# List all rides
-rides = api.read_rides_rides_get()
-for ride in rides:
-    print(f"{ride.driver_name} going from {ride.pickup_location} to {ride.destination}")
 ```
 
 ## Testing
