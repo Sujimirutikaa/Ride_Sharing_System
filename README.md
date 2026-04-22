@@ -38,16 +38,4 @@ runapplication.bat
 - Frontend will run at: `http://localhost:5173` (Vite default)
 - Swagger UI Documentation: `http://localhost:8000/docs`
 
-### 3. Database Seed Data
-An initial `seed_data.sql` file is provided. You can populate the database manually or use the setup script which initializes the schema via Alembic.
 
-
-```
-
-## Testing
-To run backend unit tests:
-```bash
-cd backend
-.\env\Scripts\activate
-pytest tests/test_main.py
-```
